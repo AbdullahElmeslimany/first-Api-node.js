@@ -24,7 +24,7 @@ mongoose.connect('mongodb+srv://muslim:thVFkL1wHxNVCWrZ@cluster0.hst5slk.mongodb
         console.log('Connected to database!');
         app.use('/home', myRouter);
 
-        app.listen(process.env.Port || 8080, () => { console.log('Server listening on port 8080') });
+        app.listen(process.env.PORT || 8080, () => { console.log('Server listening on port 8080') });
     })
     .catch(err => {
         console.error('Error connecting to database:', err);
